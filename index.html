@@ -1,20 +1,688 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My app</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Passenger Hostel - Soluções Modernas para Hospedagem</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex justify-center items-center h-screen overflow-hidden bg-white font-sans text-center px-6">
-    <div class="w-full">
-      <span class="text-xs rounded-full mb-2 inline-block px-2 py-1 border border-amber-500/15 bg-amber-500/15 text-amber-500">🔥 New version dropped!</span>
-      <h1 class="text-4xl lg:text-6xl font-bold font-sans">
-        <span class="text-2xl lg:text-4xl text-gray-400 block font-medium">I'm ready to work,</span>
-        Ask me anything.
-      </h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .font-heading {
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+        }
+        .font-body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-accent {
+            font-family: 'Playfair Display', serif;
+        }
+        .btn-primary {
+            background-color: #56E39F;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0D5C57;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #56E39F;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        .feature-icon svg {
+            width: 12px;
+            height: 12px;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-900">
+<!-- Header -->
+<header class="bg-white shadow-sm py-8">
+  <div class="container mx-auto px-4 flex justify-center items-center">
+    <img src="https://thepassengerhostel.com/wp-content/uploads/2025/02/TPH-logo.png" 
+         alt="The Passenger Hostel" 
+         class="h-20">
+  </div>
+</header>
+
+
+
+    <!-- Hero Section -->
+    <section class="bg-[#F4F4F4] py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="font-heading text-3xl md:text-5xl mb-6 leading-tight">Aqui começa o processo que vai levar o The Passenger ao título de hostel mais moderno da Europa.</h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Automação, IA e processos claros a transformar marketing, recrutamento e operações em resultados reais: mais alcance, melhor experiência e crescimento sustentável.</p>
+                <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-4 px-8 rounded-full inline-block mb-12">Quero implementar estas soluções no meu negócio</a>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="flex items-center">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </span>
+                        <span>Stack com múltiplos agentes de IA</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </span>
+                        <span>Workflows auditáveis</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                            </svg>
+                        </span>
+                        <span>Dados centralizados</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </span>
+                        <span>Ganhos de eficiência imediatos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 1 Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-2xl md:text-3xl mb-6">Marketing vivo e escalável: de conteúdos a reservas, todos os dias.</h2>
+                <p class="text-lg mb-8">Mostramos como transformar o marketing do hostel num processo estruturado, contínuo e previsível. A stack resolve a paralisia criativa, organiza o conteúdo que já existe nos grupos de WhatsApp e eleva a qualidade com formação e IA.</p>
+                
+                <div class="video-container mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/v4ZMLQ80Kq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="text-center mb-12">
+                    <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-3 px-6 rounded-full inline-block">Quero Transformar Posts Virais em Hóspedes Reais</a>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">O que resolve</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Paralisia na criação de conteúdos e falta de referências.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Desorganização na captação de fotos e vídeos do dia a dia.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Falta de consistência e padrões de qualidade.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Carga manual elevada para publicar e legendas fracas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Como funciona</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Curadoria automática de trends do setor e correlatos com base em posts que já provaram resultado.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Curso gravado de foto e vídeo pelo Gabriel + treino mensal para voluntários.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Agente de IA que monitora o WhatsApp, guarda fotos e vídeos no Drive e regista autor e data.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Ranking de contribuições por voluntário para incentivar participação.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>IA para gerar legendas alinhadas à voz do hostel.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Impacto esperado</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Mais publicações por semana e alcance superior.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Melhoria visível na qualidade dos conteúdos.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Conteúdo zero fricção a partir das atividades reais do hostel.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Da visibilidade a reservas com consistência.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 2 Section -->
+    <section class="py-16 md:py-24 bg-[#F4F4F4]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-2xl md:text-3xl mb-6">Candidaturas inteligentes: dados normalizados e triagem rápida desde o primeiro contacto.</h2>
+                <p class="text-lg mb-8">Quando o marketing acelera, chegam mais candidaturas. A solução padroniza dados, reduz o trabalho manual e eleva o encantamento do candidato ainda antes da entrevista.</p>
+                
+                <div class="video-container mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/l_Z-EJwKXxI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="text-center mb-12">
+                    <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-3 px-6 rounded-full inline-block">Quero Voluntários Certos sem Perder Tempo</a>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">O que resolve</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Currículos desestruturados e difíceis de pesquisar.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Primeiro contacto moroso e pouco eficiente.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Falta de alinhamento cultural e de expectativa.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Caixa de e-mail desorganizada.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">Como funciona</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Landing page dedicada com argumentos fortes sobre a experiência de voluntariar ou trabalhar.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Formulário padronizado com campos essenciais e pedido de vídeo curto em inglês.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Autoresponder inteligente: e-mails com CV recebem link direto para a página e formulário.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Etiquetagem automática no e-mail para manter tudo arrumado.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Dados guardados no database e notificação ao responsável para revisão.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">Impacto esperado</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Triagem mais rápida e justa com dados comparáveis.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Candidatos mais informados e motivados.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Menos tempo operacional, mais foco em seleccionar as melhores pessoas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 3 Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-2xl md:text-3xl mb-6">Estado sempre certo: quem entrou, quem saiu, quem está ativo.</h2>
+                <p class="text-lg mb-8">A gestão de voluntários deixa de depender de atualizações manuais e passa a refletir a realidade em tempo real. Transparência, eficiência operacional e zero ruído.</p>
+                
+                <div class="video-container mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/m1Rq8VUxeEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="text-center mb-12">
+                    <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-3 px-6 rounded-full inline-block">Quero Paz de Espírito na Gestão de Voluntários</a>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">O que resolve</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Dados desatualizados no dashboard de voluntários.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Dificuldade em saber rapidamente quem está ativo.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Sobrecarga de coordenação e falhas humanas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Como funciona</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Monitorização automática do grupo de WhatsApp de voluntários.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Entrou no grupo fica ativo. Saiu do grupo fica inativo.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Se já existia no database, atualiza o registo. Se é novo, cria o registo com o número e permite completar nome e nacionalidade.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Dashboard mostra o total de ativos e histórico de entradas e saídas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-[#F4F4F4] p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Impacto esperado</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Base de dados sempre alinhada com a realidade.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Menos tempo a conferir listas e mais foco na experiência dos hóspedes.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Simplicidade operacional com regra clara de entrada e saída.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 4 Section -->
+    <section class="py-16 md:py-24 bg-[#F4F4F4]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-2xl md:text-3xl mb-6">Insights acionáveis todos os meses: o radar que mantém o hostel um passo à frente.</h2>
+                <p class="text-lg mb-8">A internet já concentra feedbacks e experiências valiosas. O sistema faz scraping em canais chave, filtra por relevância e usa IA para resumir, classificar e propor soluções.</p>
+                
+                <div class="video-container mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/DADmwfkMLZ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="text-center mb-12">
+                    <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-3 px-6 rounded-full inline-block">Quero Ficar Sempre um Passo à Frente da Concorrência</a>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">O que resolve</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Pesquisas manuais demoradas e caras.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Falta de visão contínua sobre tendências e expectativas dos hóspedes.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                                <span>Dificuldade em transformar insights soltos em ações claras.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">Como funciona</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Scraping em Reddit e outras plataformas com filtros de frescura e engagement.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Classificação por tipo de conteúdo: queixa, sugestão, elogio.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Sumarização rápida e brainstorm de soluções com IA.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span>Registo no database e relatórios periódicos com tendências e recomendações.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-heading text-xl mb-4">Impacto esperado</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Decisões orientadas por dados reais do mercado.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Prioridade para melhorias com maior retorno percebido pelos hóspedes.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 text-green-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span>Diferenciação competitiva sustentada.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="py-16 md:py-24 bg-[#0D5C57] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-heading text-2xl md:text-3xl mb-12">Soluções confiáveis para o seu negócio</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Workflows documentados</h3>
+                        <p>Processos claros e auditáveis para total transparência.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Tecnologia modular</h3>
+                        <p>Stack com agentes de IA e integrações n8n para máxima flexibilidade.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                        <h3 class="font-heading text-xl mb-4">Segurança integrada</h3>
+                        <p>Privacy by design e redução do risco no manuseio de anexos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 md:py-24 bg-[#E6DED0]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-heading text-2xl md:text-4xl mb-8">Aqui, só os hóspedes são passageiros. O futuro da hospitalidade veio para ficar.</h2>
+                <p class="text-lg mb-8">Tomás, sabes que a minha intenção com tudo isto não é apenas criar automações soltas, mas sim construir contigo uma parceria de longo prazo.</p>
+                <p class="text-lg mb-8">Se sentires que isto pode realmente ajudar o The Passenger a crescer e a manter-se sempre na frente, basta clicar no botão abaixo.</p>
+                <p class="text-lg mb-12">O mais importante é que tudo aqui é moldável — porque sei que o hostel muda, que as necessidades nunca são estáticas. Ter alguém ao lado para adaptar o sistema sempre que for preciso pode fazer toda a diferença.</p>
+                <a href="https://wa.me/5581991214262?text=Fala%2C%20Gabriel.%20Vi%20os%20teus%20v%C3%ADdeos%20e%20pensei%20em%20fazer%20o%20seguinte..." class="btn-primary text-white font-bold py-4 px-8 rounded-full inline-block">Vamos iniciar essa parceria</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-black text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+      <img src="https://thepassengerhostel.com/wp-content/uploads/2025/02/TPH-logo.png" 
+           alt="The Passenger Hostel" 
+           class="h-20 mb-6 md:mb-0">
+
+      <img src="https://i.ibb.co/B29HJp0S/BG-Lab-Logo-badge-2.png" 
+           alt="BG Lab" 
+           class="h-20">
     </div>
-      <img src="https://enzostvs-deepsite.hf.space/arrow.svg" class="absolute bottom-8 left-0 w-[100px] transform rotate-[30deg]" />
-    <script></script>
-  <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=gabrielrevito/the-passenger-hostel-demo" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+
+    <div class="text-center text-sm text-gray-400">
+      Todos os direitos reservados - Boost Growth Lab - 2025
+    </div>
+  </div>
+</footer>
+
+
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=gabrielrevito/the-passenger-hostel-demo" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
