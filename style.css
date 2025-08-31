@@ -1,28 +1,20 @@
+/* Garante que paddings contam para a largura total */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Mais respiro nas laterais, responsivo */
 body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+  padding-block: 2rem;                     /* cima/baixo = 2rem */
+  padding-inline: clamp(20px, 6vw, 48px);  /* esquerda/direita cresce com a viewport */
+  font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
 }
 
-h1 {
-	font-size: 16px;
-	margin-top: 0;
-}
-
-p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
-}
-
+/* Opcional: um pouco mais de ar dentro dos cartões */
 .card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
-}
-
-.card p:last-child {
-	margin-bottom: 0;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 20px;               /* era 16px */
+  border: 1px solid lightgray;
+  border-radius: 16px;
 }
