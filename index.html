@@ -66,6 +66,23 @@
 
   gtag('config', 'G-RPEF7YY109');
 </script>
+
+    <script>
+  // When the page loads, ping n8n webhook
+  fetch("https://n8n-n8n.edklgn.easypanel.host/webhook-test/passenger-visit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      url: window.location.href,
+      referrer: document.referrer,
+      timestamp: new Date().toISOString(),
+      userAgent: navigator.userAgent
+    })
+  });
+</script>
+
     
 <body class="font-body bg-white text-gray-900">
 <!-- Header -->
